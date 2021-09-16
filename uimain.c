@@ -33,6 +33,16 @@ int main()
       puts("You selected arrow:");
       print_arrow();
       break;
+    case 'b':
+      puts("You selected chars in 5x7:");
+      for(char c = 'A'; c < 'D'; c++)
+	print_char_5x7(c);
+      break;
+    case 'e':
+      puts("You selected chars in 8x12:");
+      for(char c = 'A'; c < 'D'; c++)
+	print_char_8x12(c);
+      break;
     case 'q':
       puts("Bye!");
       goto done; 		/* terminate */
